@@ -14,3 +14,127 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+// .scroll-content{
+//     background-color:#000 !important;
+// }
+
+.toolbar-background-md{
+    background-color: #fff !important;
+    border-bottom: 1px solid #f7f7f7;
+ }
+
+ ion-header.header.header-md::after {
+    display: none !important;
+}
+
+.toolbar-title-md {
+    font-size: 1.6rem !important;
+}
+
+page-home ion-title{
+    padding-left: 20px;
+}
+
+page-home .apps{
+    padding: 0 15px !important;
+    margin: 0;
+}
+
+page-home .apps .app{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+page-home .apps .app .name{
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+page-home .apps .app .stores{
+    display: flex;
+    margin-left: auto;
+    right: 15px;
+    margin-top: 20px;
+}
+
+
+page-home .apps .app .stores .item{
+    font-size: 9px;
+    background-color: #ffffff;
+    color: #d4d4d4;
+    padding: 3px 5px;
+    border: 1px solid #dadada;
+    border-radius: 50px;
+    margin-left: 2px;
+}
+
+page-comments .comments-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    // border-bottom: 1px solid #f7f7f7;
+    padding-bottom: 10px;
+}
+
+page-comments .comments-header .title{
+    font-weight: 500;
+}
+
+page-comments .comments-header .stores .btn{
+    background: none;
+    border: none;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 50px;
+    // border:  1px solid #eee;
+}
+
+page-comments .comments-header .stores .btn.selected{
+    background-color: #427feb;
+    color: #fff;
+    border: none;
+}
+
+page-comments .comment{
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px;
+    list-style: none !important;
+}
+
+page-comments .comment span{
+    display: block;
+}
+
+
+page-comments .comment .nickname{
+    margin-top: 2px;
+    font-size: 13px;
+    color: #427feb;
+    font-weight: 500;
+}
+
+page-comments .comment .title{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+page-comments .comment .review{
+    font-size: 14px;
+    margin-top: 10px;
+    color: #000;
+}
+
+page-comments .comment .footer{
+    display: flex;
+    justify-content: space-between;
+    color: #aaa;
+    font-size: 12px; 
+}
+
+page-comments .comment .footer .version, .date{
+    margin-top: 10px;  
+}

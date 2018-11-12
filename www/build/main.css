@@ -25673,3 +25673,142 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
+
+.toolbar-background-md {
+  background-color: #fff !important;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+ion-header.header.header-md::after {
+  display: none !important;
+}
+
+.toolbar-title-md {
+  font-size: 1.6rem !important;
+}
+
+page-home ion-title {
+  padding-left: 20px;
+}
+
+page-home .apps {
+  padding: 0 15px !important;
+  margin: 0;
+}
+
+page-home .apps .app {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+page-home .apps .app .name {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+page-home .apps .app .stores {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  right: 15px;
+  margin-top: 20px;
+}
+
+page-home .apps .app .stores .item {
+  font-size: 9px;
+  background-color: #ffffff;
+  color: #d4d4d4;
+  padding: 3px 5px;
+  border: 1px solid #dadada;
+  border-radius: 50px;
+  margin-left: 2px;
+}
+
+page-comments .comments-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 15px;
+  padding-bottom: 10px;
+}
+
+page-comments .comments-header .title {
+  font-weight: 500;
+}
+
+page-comments .comments-header .stores .btn {
+  background: none;
+  border: none;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 50px;
+}
+
+page-comments .comments-header .stores .btn.selected {
+  background-color: #427feb;
+  color: #fff;
+  border: none;
+}
+
+page-comments .comment {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 15px;
+  list-style: none !important;
+}
+
+page-comments .comment span {
+  display: block;
+}
+
+page-comments .comment .nickname {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #427feb;
+  font-weight: 500;
+}
+
+page-comments .comment .title {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+page-comments .comment .review {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #000;
+}
+
+page-comments .comment .footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #aaa;
+  font-size: 12px;
+}
+
+page-comments .comment .footer .version, .date {
+  margin-top: 10px;
+}

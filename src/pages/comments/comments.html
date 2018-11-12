@@ -1,0 +1,34 @@
+<!--
+  Generated template for the CommentsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{app.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="section-comments">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <header class="comments-header">
+    <span class="title">{{ comments.length }} Comentários</span>
+    <div class="stores">
+      <button class="btn" [ngClass]="{'selected': store=='google'}" *ngIf="app.google" (click)="requestGoogleComments()">google</button>
+      <button class="btn" [ngClass]="{'selected': store=='apple'}" *ngIf="app.apple" (click)="requestAppleComments()">apple</button>
+    </div>
+  </header>
+
+  <li *ngFor="let comment of comments; let myIndex = index" class="comment">
+    <span class="nickname"> {{comment.author}} </span>
+    <span class="review"> {{comment.review}} </span>
+    <div class="footer"> 
+        <span class="version">v{{comment.appVersion}} </span> 
+        <span class="date">{{comment.date}} </span>
+    </div>
+  </li>
+</ion-content>
