@@ -1,14 +1,24 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      {{ apps.length }} Aplicações
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ul class="apps">
+      <li *ngFor="let app of apps; let myIndex = index" class="app" (click)="openApp(app)">
+        <img src="{{app.google ? app.google.iconUrl : app.apple.iconUrl}}" height="40px"/>
+        <span class="name">{{app.name}}</span>
+        <!-- <div class="stores">
+            <span class="item" *ngIf="app.google">{{app.google ? 'google'  : '' }}</span>
+            <span class="item" *ngIf="app.apple">{{app.apple ? 'apple'  : '' }}</span>
+        </div> -->
+        
+      </li>
+  </ul>
 </ion-content>
